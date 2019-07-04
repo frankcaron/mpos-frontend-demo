@@ -2,6 +2,5 @@
     "name": "mPOS Sample App",
     "description": "Simple sample app to demonstrate Mulesoft's ability to power a mPOS via a cohesive API Network",
     "repository": "https://github.com/frankcaron/mpos-front-end-demo",
-    "logo": "",
     "keywords": ["node", "express", "static"]
   }
