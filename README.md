@@ -15,4 +15,4 @@ You will need:
 
 # Thanks
 
-Big thanks to [![Steve S.]](https://github.com/SShaginyan) @ Heroku for the help. Heroku Solution Engineers are legit.
+Big thanks to [![Steve S.](https://github.com/SShaginyan) @ Heroku for the help. Heroku Solution Engineers are legit.
