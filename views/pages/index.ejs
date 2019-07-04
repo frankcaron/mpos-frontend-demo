@@ -1,14 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <div class="page-container">
         <div class="page-masthead">
+            <ul class="hud">
+                <li class="hud-item">
+                        <span class="hud-counter">Till</span>
+                        <span class="hud-value">C0001</span>
+                </li>
+                <li class="hud-item">
+                        <span class="hud-counter">Operator</span>
+                        <span class="hud-value">Frank Caron</span>
+                </li>
+                <li class="hud-item">
+                    |
+                </li>
+                <li class="hud-item">
+                    <span class="hud-counter">Cash</span>
+                    <span class="hud-value">$400.00</span>
+                </li>
+                <li class="hud-item">
+                        <span class="hud-counter">Date</span>
+                        <span class="hud-value">
+                            <script language="JavaScript">
+                                var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+                                document.write(utc);
+                            </script>
+                        </span>
+                    </li>
+                <li class="hud-item">
+                    <span class="hud-counter">Time</span>
+                    <span class="hud-value">
+                        <script language="JavaScript">
+                            var time = new Date().toLocaleTimeString();
+                            document.write(time);
+                        </script>
+                    </span>
+                </li>
+            </ul>
         </div>
         <div class="page-content">
-            <h1>1 mPos: Coming up!</h1>
+            <div class="page-tiles">
+                <div class="tile-set">
+
+                    <div class="tile tile-red">
+                        <div class="tile-image">
+                                <span class="placeholder">Image</span>
+                        </div>
+                        <div class="tile-title tile-title-red">
+                            Sandwiches
+                        </div>
+                    </div>
+
+                    <div class="tile tile-orange">
+                        <div class="tile-image">
+                                <span class="placeholder">Image</span>
+                        </div>
+                        <div class="tile-title tile-title-orange">
+                            Sides
+                        </div>
+                    </div>
+
+                    <div class="tile tile-yellow">
+                        <div class="tile-image">
+                                <span class="placeholder">Image</span>
+                        </div>
+                        <div class="tile-title tile-title-yellow">
+                            Hot Plates
+                        </div>
+                    </div>
+
+                    <div class="tile tile-green">
+                        <div class="tile-image">
+                                <span class="placeholder">Image</span>
+                        </div>
+                        <div class="tile-title tile-title-green">
+                            Salads
+                        </div>
+                    </div>
+
+                    <div class="tile tile-blue">
+                        <div class="tile-image">
+                            <span class="placeholder">Image</span>
+                        </div>
+                        <div class="tile-title tile-title-blue">
+                            Desserts
+                        </div>
+                    </div>
+                        
+
+                </div>
+            </div>
+            <div class="page-tray">
+                <div class="tray-offer">
+                        <p class="offer-title">Offer</p>
+                        <p class="offer-description">This is an offer that we will present to a server.</p>
+                </div>
+                <div class="tray-console">
+                    <h2>Console 1</h2>
+                </div>
+                <div class="tray-order">
+                    <table class="tray-order">
+                        <tr>
+                            <th class="order-item">Item</td>
+                            <th class="order-price">Price</td>
+                        </tr>
+                        <tr class="order-selected">
+                            <td class="order-item-selected">
+                                <p>Big Bob M Trio</p>
+                                <p class="small">1 x 23.10</p>
+                            </td>
+                            <td class="order-price">
+                                <p class="small">&nbsp;</p>
+                                <p>$23.10</p>
+                            </td>
+                        </tr>
+                        <tr class="order">
+                            <td class="order-item">
+                                <p class="sent">Big Bob M Trio</p>
+                                <p class="small-sent">1 x 23.10</p>
+                            </td>
+                            <td class="order-price">
+                                <p class="small-sent">&nbsp;</p>
+                                <p class="sent">$23.10</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tray-buttons">
+                    <div class="tray-button">
+                        <button type="button">Button 1</button>
+                    </div>
+                    <div class="tray-button-disabled">
+                        <button type="button">Button 2</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <div class="menu-pagination">
+                <div class="menu"><span class="menu-button">Other Orders</span></div>
+                <div class="menu"><span class="pagination">Page 1 Of 1</span></div>
+                <div class="menu"><span class="menu-button">Today's Menu</span></div>
+            </div>
+            <div class="checkout-button">
+                <button type="button">Checkout $46.20</button>
+            </div>
         </div>
     </div>
 </body>
