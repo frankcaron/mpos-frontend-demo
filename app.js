@@ -7,7 +7,7 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .get('/test', (req, res) => res.send('Your demo is going to be magic.'))
+  .get('/test', (req, res) => res.send('Your demo is magic.'))
 
 /* 
     Extended pass-through of what we're going to need to make the
