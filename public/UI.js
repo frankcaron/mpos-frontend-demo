@@ -1,7 +1,13 @@
 $( document ).ready(function() {
 
-    //* On Click logic
-    $( "div.tile" ).click(function() {
+    // On Click Logic For Order Items
+    $( "body" ).on('click', 'div.order-line-item', function() {
+        console.log("clicked");
+        $(this).find('div.order-not-selected').toggleClass("order-selected");
+    });
+
+    //* On Click logic For Tiles
+    $( "body" ).on('click', 'div.tile', function() {
 
         var containerDiv = '<div class="order-line-item">';
         var orderSelected = '<div class="order-not-selected"></div>';

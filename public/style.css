@@ -221,6 +221,7 @@ div.order-line-item {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    cursor: pointer;
 }
 div.order-item {
     width: calc(50% - 5px);
@@ -234,8 +235,6 @@ div.order-item {
 div.order-selected {
     background-color: #ff0000;
     width: 10px;
-    min-width: 10px;
-    max-width: 10px;
 }
 div.order-not-selected {
     width: 10px;
