@@ -13,7 +13,14 @@ const getProductsAsync =
         return body;
     });
 
-/* Helper function to return all Sites */
+const getStationsAsync =
+requestlater({
+    uri: MULE_STATION_BASE_URL,
+    json: true
+}).then(function(body) {
+    return body;
+});
+
 const getProducts = (request, response) => {
     requestor.get(MULE_PRODUCT_BASE_URL, { json: true }, (err, res, body) => {
       if (err) { return console.log(err); } 
@@ -21,7 +28,6 @@ const getProducts = (request, response) => {
     })
   }
 
-/* Helper function to return all Sites */
 const getStations = (request, response) => {
     requestor.get(MULE_STATION_BASE_URL, { json: true }, (err, res, body) => {
       if (err) { return console.log(err); } 
@@ -32,5 +38,6 @@ const getStations = (request, response) => {
 module.exports={
     getProducts,
     getProductsAsync,
-    getStations
+    getStations,
+    getStationsAsync
  };

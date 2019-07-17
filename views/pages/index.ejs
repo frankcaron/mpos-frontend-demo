@@ -10,7 +10,7 @@
             <ul class="hud">
                 <li class="hud-item">
                         <span class="hud-counter">Till</span>
-                        <span class="hud-value">C0001</span>
+                        <span class="hud-value"><%= stations.response[0].StationID %></span>
                 </li>
                 <li class="hud-item">
                         <span class="hud-counter">Operator</span>
@@ -88,7 +88,7 @@
                         <p class="offer-description">This is an offer that we will present to a server.</p>
                 </div>
                 <div class="tray-console">
-                    <h2>Console 1</h2>
+                    <h2><%= stations.response[0].StoreType %></h2>
                 </div>
                 <div class="tray-order">
 
