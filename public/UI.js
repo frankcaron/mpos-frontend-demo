@@ -12,11 +12,15 @@ $( document ).ready(function() {
     //Put Cart val in
     updateCost();
 
-    // On Click Logic For Button
+    // Checkout
     $( "body" ).on('click', 'div.checkout-button', function() {
+        //Send order
+        
+        //Clear current order
         orderCost = 0;
         updateCost();
         $('div.order-line-item').remove();
+        orderItems = [];
     });
 
     // On Click Logic For Order Items
@@ -27,13 +31,17 @@ $( document ).ready(function() {
     //* On Click logic For Tiles
     $( "body" ).on('click', 'div.tile', function() {
 
+        //Parse tile clicked
         var itemContent = $(this).find('div.tile-title').text();
-
         var orderItemPrice = $(this).find('span#price').text();
         orderItemPrice = parseFloat(orderItemPrice);
-
         var productID = $(this).find('span#id').text();
 
+        //Add item to array of order items
+        var orderItem = { 'productID' : productID, 'orderItemPrice' : orderItemPrice };
+        orderItems.push(orderItem);
+
+        //Build new order item dom
         var containerDiv = '<div class="order-line-item">';
         var orderSelected = '<div class="order-not-selected"></div>';
         var itemDiv = '<div class="order-item"><div class="order-content">';
