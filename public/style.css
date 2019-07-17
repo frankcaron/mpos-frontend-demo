@@ -212,6 +212,7 @@ div.tray-order, table.tray-order {
 }
 div.tray-order {
     height: calc(100% - 80px - 75px - 40px);
+    overflow-y: scroll;
 }
 
 
