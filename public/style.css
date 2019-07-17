@@ -94,6 +94,7 @@ div.menu-pagination {
 }
 div.checkout-button {
     width: 30%;
+    min-width: 300px;
     padding: 0px;
     margin: 0px;
     height: 55px;
@@ -217,7 +218,7 @@ div.tray-order {
 }
 
 
-div.order-line-item {
+div.order-line-item, div.order-header-item {
     display: flex;
     flex-wrap: wrap;
     width: 100%;

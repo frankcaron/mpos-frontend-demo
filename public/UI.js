@@ -12,9 +12,15 @@ $( document ).ready(function() {
     //Put Cart val in
     updateCost();
 
+    // On Click Logic For Button
+    $( "body" ).on('click', 'div.checkout-button', function() {
+        orderCost = 0;
+        updateCost();
+        $('div.order-line-item').remove();
+    });
+
     // On Click Logic For Order Items
     $( "body" ).on('click', 'div.order-line-item', function() {
-        console.log("clicked");
         $(this).find('div.order-not-selected').toggleClass("order-selected");
     });
 
@@ -22,7 +28,7 @@ $( document ).ready(function() {
     $( "body" ).on('click', 'div.tile', function() {
 
         var itemContent = $(this).find('div.tile-title').text();
-        
+
         var orderItemPrice = $(this).find('span#price').text();
         orderItemPrice = parseFloat(orderItemPrice);
 
