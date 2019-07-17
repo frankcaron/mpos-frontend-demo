@@ -58,6 +58,15 @@
                                         <%= products[i].ProductName %>
                                 </div>
                             </div>
+                        <% } else if (products[i].ProductType == 'Deli') {%>
+                                <div class="tile tile-yellow">
+                                    <div class="tile-image">
+                                            <img class="thumbnail" src="<%=products[i].ProductImageURL%>" />
+                                    </div>
+                                    <div class="tile-title tile-title-yellow">
+                                            <%= products[i].ProductName %>
+                                    </div>
+                                </div>
                         <% } else { %>
                             <div class="tile tile-blue">
                                     <div class="tile-image">
