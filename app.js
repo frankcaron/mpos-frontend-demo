@@ -17,6 +17,7 @@ express()
     });
   })
   .get('/products', mule.getProducts)
+  .get('/stations', mule.getStations)
   .get('/test', (req, res) => res.send('Your demo is going to be magic.'))
 
 /* 
