@@ -19,7 +19,7 @@ div.page-masthead {
     height: 55px;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
+    overflow-x: scroll;
 }
 div.page-footer {
     width: 100%;
@@ -51,6 +51,7 @@ div.page-tiles {
     background-color: #eee;
     padding: 0px;
     margin: 0px;
+    overflow-y: scroll;
 }
 
 /* ==== 
@@ -60,7 +61,6 @@ HUD
 ul.hud {
     display: inline;
     line-height: 55px;
-    overflow: hidden;
 }
 ul.hud li.hud-item {
     margin: 0px;
