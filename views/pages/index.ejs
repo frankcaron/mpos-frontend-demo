@@ -104,32 +104,54 @@
                     <h2>Console 1</h2>
                 </div>
                 <div class="tray-order">
-                    <table class="tray-order">
-                        <tr>
-                            <th class="order-item">Item</td>
-                            <th class="order-price">Price</td>
-                        </tr>
-                        <tr class="order-selected">
-                            <td class="order-item-selected">
-                                <p>Big Bob M Trio</p>
-                                <p class="small">1 x 23.10</p>
-                            </td>
-                            <td class="order-price">
-                                <p class="small">&nbsp;</p>
-                                <p>$23.10</p>
-                            </td>
-                        </tr>
-                        <tr class="order">
-                            <td class="order-item">
-                                <p class="sent">Big Bob M Trio</p>
-                                <p class="small-sent">1 x 23.10</p>
-                            </td>
-                            <td class="order-price">
-                                <p class="small-sent">&nbsp;</p>
-                                <p class="sent">$23.10</p>
-                            </td>
-                        </tr>
-                    </table>
+
+                    <div class="order-line-item">
+                        <div class="order-header">
+                            <div class="header-content">
+                                Item
+                            </div>
+                        </div>
+                        <div class="order-header">
+                            <div class="header-content">
+                                Price
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-line-item">
+                        <div class="order-selected"></div>
+                        <div class="order-item">
+                            <div class="order-content">
+                            Big Bob M Trio
+                            </div>
+                            <div class="order-content">
+                                1 x $23.10
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="order-price">
+                            $23.10
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="order-line-item sent">
+                            <div class="order-not-selected"></div>
+                            <div class="order-item">
+                                <div class="order-content">
+                                Big Bob M Trio
+                                </div>
+                                <div class="order-content">
+                                    1 x $23.10
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-price">
+                                $23.10
+                                </div> 
+                            </div>
+                        </div>
+                    
                 </div>
                 <div class="tray-buttons">
                     <div class="tray-button">

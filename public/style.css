@@ -211,45 +211,64 @@ div.tray-order, table.tray-order {
     padding: 0px;
 }
 div.tray-order {
-    height: calc(100% - 80px - 75px - 50px);
+    height: calc(100% - 80px - 75px - 40px);
 }
 
-table.tray-order {
-    margin-top: 10px;
-    margin-left: 5px;
-    border-collapse: collapse; 
+
+div.order-line-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
-table.tray-order th {
-    text-align: left;
-    padding-left: 25px;
+div.order-item {
+    width: calc(50% - 5px);
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
     padding-bottom: 10px;
+    text-align: left;
 }
 
+div.order-selected {
+    background-color: #ff0000;
+    width: 10px;
+    min-width: 10px;
+    max-width: 10px;
+}
+div.order-not-selected {
+    width: 10px;
+    min-width: 10px;
+    max-width: 10px;
+}
 
-
-td.order-item {
+div.order-header {
     width: 50%;
     margin: 0px;
     padding: 0px;
-    text-align: left;
-    padding-left: 20px;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
 }
-td.order-item-selected {
-    width: 50%;
-    margin: 0px;
-    padding: 0px;
-    text-align: left;
-    padding-left: 15px;
+
+div.header-content {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 }
-tr.order-selected {
-    border-left: 10px solid #ff0000;
+
+div.order-content {
+    width: 100%;
+    margin-left: 20px;
 }
-td.order-price {
-    width: 50%;
-    margin: 0px;
-    padding: 0px;
-    text-align: left;
-    padding-left: 20px;
+
+div.order-price {
+    margin-right: 40px;
+    text-align: right;
+}
+
+div.sent {
+    color: #DDD;
 }
 
 h2 {
