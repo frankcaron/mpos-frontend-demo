@@ -47,50 +47,28 @@
             <div class="page-tiles">
                 <div class="tile-set">
 
-                    <div class="tile tile-red">
-                        <div class="tile-image">
-                                <span class="placeholder">Image</span>
-                        </div>
-                        <div class="tile-title tile-title-red">
-                            Sandwiches
-                        </div>
-                    </div>
-
-                    <div class="tile tile-orange">
-                        <div class="tile-image">
-                                <span class="placeholder">Image</span>
-                        </div>
-                        <div class="tile-title tile-title-orange">
-                            Sides
-                        </div>
-                    </div>
-
-                    <div class="tile tile-yellow">
-                        <div class="tile-image">
-                                <span class="placeholder">Image</span>
-                        </div>
-                        <div class="tile-title tile-title-yellow">
-                            Hot Plates
-                        </div>
-                    </div>
-
-                    <div class="tile tile-green">
-                        <div class="tile-image">
-                                <span class="placeholder">Image</span>
-                        </div>
-                        <div class="tile-title tile-title-green">
-                            Salads
-                        </div>
-                    </div>
-
-                    <div class="tile tile-blue">
-                        <div class="tile-image">
-                            <span class="placeholder">Image</span>
-                        </div>
-                        <div class="tile-title tile-title-blue">
-                            Desserts
-                        </div>
-                    </div>
+                    <!-- Menu Categories -->
+                    <% for(var i=0; i<products.length; i++) {%>
+                        <% if (products[i].ProductType == 'Chips') {%>
+                            <div class="tile tile-red">
+                                <div class="tile-image">
+                                        <img class="thumbnail" src="<%=products[i].ProductImageURL%>" />
+                                </div>
+                                <div class="tile-title tile-title-red">
+                                        <%= products[i].ProductName %>
+                                </div>
+                            </div>
+                        <% } else { %>
+                            <div class="tile tile-blue">
+                                    <div class="tile-image">
+                                            <img class="thumbnail" src="<%=products[i].ProductImageURL%>" />
+                                    </div>
+                                    <div class="tile-title tile-title-blue">
+                                            <%= products[i].ProductName %>
+                                    </div>
+                                </div>
+                        <% } %>    
+                    <% } %>
                         
 
                 </div>

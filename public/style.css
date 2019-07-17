@@ -300,7 +300,7 @@ div.tile-set {
 
 div.tile {
     width: 150px;
-    height: 100px;
+    height: 120px;
     margin: 10px;
     box-shadow: 5px 10px #ddddddee;
 }
@@ -311,6 +311,13 @@ span.placeholder {
 
 div.tile-image {
     height: 70px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+img.thumbnail {
+    height: 70px;
+    vertical-align: middle;
 }
 
 div.tile-title {
