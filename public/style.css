@@ -231,6 +231,11 @@ div.order-item {
     padding-bottom: 10px;
     text-align: left;
 }
+div.quantity {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #666;
+}
 
 div.order-selected {
     background-color: #ff0000;
@@ -271,6 +276,7 @@ div.order-price {
 div.sent {
     color: #DDD;
 }
+
 
 h2 {
     font-size: 17px;
@@ -369,4 +375,8 @@ div.tile-blue {
 }
 div.tile-title-blue {
     background-color: rgb(115, 151, 250);
+}
+
+span.metadata {
+    display: none;
 }

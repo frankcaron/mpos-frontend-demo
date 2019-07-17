@@ -59,6 +59,11 @@
                                 <div class="tile-title tile-title-red">
                                         <%= products[i].ProductName %>
                                 </div>
+                                <span class="metadata">
+                                    <span id="id"><%= products[i].ProductID %></span>
+                                    <span id="price"><%= products[i].Price %></span>
+                                    <span id="quantity"><%= products[i].QuantityAvailable %></span>
+                                </span>
                             </div>
                         <% } else if (products[i].ProductType == 'Deli') {%>
                                 <div class="tile tile-yellow">
@@ -68,6 +73,11 @@
                                     <div class="tile-title tile-title-yellow">
                                             <%= products[i].ProductName %>
                                     </div>
+                                    <span class="metadata">
+                                            <span id="id"><%= products[i].ProductID %></span>
+                                            <span id="price"><%= products[i].Price %></span>
+                                            <span id="quantity"><%= products[i].QuantityAvailable %></span>
+                                        </span>
                                 </div>
                         <% } else { %>
                             <div class="tile tile-blue">
@@ -77,6 +87,11 @@
                                     <div class="tile-title tile-title-blue">
                                             <%= products[i].ProductName %>
                                     </div>
+                                    <span class="metadata">
+                                            <span id="id"><%= products[i].ProductID %></span>
+                                            <span id="price"><%= products[i].Price %></span>
+                                            <span id="quantity"><%= products[i].QuantityAvailable %></span>
+                                        </span>
                                 </div>
                         <% } %>    
                     <% } %>
@@ -125,7 +140,7 @@
                 <div class="menu"><span class="menu-button">Today's Menu</span></div>
             </div>
             <div class="checkout-button">
-                <button type="button">Checkout $46.20</button>
+                <button type="button">Checkout $<span class="cost"></span></button>
             </div>
         </div>
     </div>

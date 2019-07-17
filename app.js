@@ -13,12 +13,15 @@ express()
   .get('/', (req, res) => { 
     Promise.all([mule.getProductsAsync, mule.getStationsAsync])
     .then(results => {
+
+      //Grab
+      var stations = results[1];
+      var products = results[0];
+
+      //Return
       res.render('pages/index', { 
-        products: results[0],
-        stations: results[1]
-      }).catch(err => {
-        console.log(err);
-        res.sendStatus(500);
+        products: products,
+        stations: stations
       })
     })
   })
